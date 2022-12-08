@@ -1,0 +1,56 @@
+Summary
+...............
+The Dataset what we selected has 11 features where 10 features are input variable and 1 feature is the Target variable.
+ 
+Dataset Description:-
+
+user_id - The unique id of the Customer
+signup_time  -The time at which the Customer signs up into the portal     
+purchase_time -The time at which the Customer performs any purchase from the portal
+purchase_value  - The amount at which the customer buys
+device_id   - device id is specific to the device what the customer is using
+source   - The channel used by customer to get into the portal
+browser  - Search engine used by customer during their search in the portal
+sex       - Customer Gender
+age     -Customer age
+ip_address  - Customer IP Address
+class    - Target variable [1- Fraud transaction , 0 - Successfull Transaction]
+..................................................................
+-The size of the Dataset is -(151112 rows, 12 columns)
+- The Dataset is an imbalanced dataset where target variable class [0 is (136961 rows) and 1 is (14151 rows)]
+
+.........................................
+Finds from the EDA on the Dataset
+
+1- Feb Month ,2015 maximum purchase amount of 154 was been done
+2- Purchase value analysis in buckets versus count of customer and Avg time take to Buy 
+
+  For a purchase value between 0 to 25 ,the count of Customers is  44209 and the avergae days taken to buy is 32.
+  For a purchase value between 25 to 50 ,the count of Customers is  69876 and  the avergae days taken to buy is 32
+  For a purchase value between 50 to 75 ,the count of Customers is  29258 and the avergae days taken to buy is 33
+  For a purchase value between 75 to 100 ,the count of Customers is  4419 and the avergae days taken to buy is 34
+  For a purchase value between 100 to 125,the count of Customers is  267 and  the avergae days taken to buy is 27
+  For a purchase value between 125 to 150, the count of Customers is  12 and the avergae days taken to buy is 27
+
+3- their is no correlation between independent variables
+4- Now we  have analyze the dataset where class=1[fruad] where we could find 
+  -In Gender columns , 8434 are male and 5717 are female who have made fraud transaction
+  -In Broser column we can find the below search engine used by Fraudsters
+   Chrome -6069
+   IE -3187
+   FireFox-2342
+   Safari-2225
+   Opera -328
+- In Age column:-
+  People with age less than 20 is 512
+  People with age grater than 20 and less than 40 is 10049
+  People with age grater than 40 is 2802     
+- In Source column
+  Ads       5513
+  SEO       5412
+  Direct    3226
+5- From one device id we could in few case their are more than one user id been generated .In those cases ,we marked 
+   19 user id has signed up from same Device id =CQTUVBYIWWWBC.
+....................................................................................................................
+
+  
